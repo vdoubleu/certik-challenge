@@ -4,11 +4,11 @@ import { PieChart, Pie, Legend, Tooltip, Cell, ResponsiveContainer } from 'recha
 const SentimentChart = (props) => {
   const data = props.data.pos ?
                 [{name: "positive", value: props.data.pos}, 
-                {name: "negative", value: props.data.neg}, 
-                {name: "neutral", value: props.data.neu}]
+                {name: "neutral", value: props.data.neu},
+                {name: "negative", value: props.data.neg}]
               : [];
 
-  const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
+  const COLORS = ['#40B884', '#486A79', '#E1AA4C'];
 
   const responsiveAspect = props.viewSize > 1025 ? 1 : 3;
 
