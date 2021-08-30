@@ -23,9 +23,9 @@ const AccountActivity = (props) => {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="retweets" stroke="#8884d8" />
-        <Line type="monotone" dataKey="likes" stroke="#82ca9d" />
-        <Line type="monotone" dataKey="tweets" stroke="#82cd2d" />
+        <Line type="monotone" dataKey="retweets" stroke="#6B7D95" />
+        <Line type="monotone" dataKey="likes" stroke="#6EC8A1" />
+        <Line type="monotone" dataKey="tweets" stroke="#E2AF57" />
       </LineChart>
     </ResponsiveContainer>
   );
