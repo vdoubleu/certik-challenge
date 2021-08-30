@@ -36,7 +36,7 @@ const AnalyticsBody = () => {
     <div className="grid gap-4 lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-1 md:grid-rows-3"> 
       <div className="lg:col-start-1 lg:col-span-1 lg:row-start-1 lg:row-span-2 md:row-start-1 md:row-span-1 md:col-start-1 md:col-span-1"> 
         <div className="mt-2 mb-4 h-10 flex items-center font-sans text-2xl font-medium">
-          CertiK Sentiment Analysis
+          Certik Sentiment Analysis
         </div>
         <div className="w-full bg-gray-100 flex items-center flex-col h-9/10">
           <div className="mb-10 ml-5 w-full font-sans text-gray-600 font-medium"> From {new Date().toDateString()} to {getEndDate(activityDisplayDuration).toDateString()} </div>
@@ -70,7 +70,7 @@ const AnalyticsBody = () => {
       </div>
       <div className="lg:col-start-2 lg:col-span-2 lg:row-start-2 lg:row-span-1 md:col-start-1 md:col-span-1 md:row-start-3 md:row-span-1">
         <div className="my-2 h-10 flex items-center font-sans text-2xl font-medium">
-          Social Key Words aggregated by CertiK
+          Social Key Words Aggregated by Certik
         </div>
         <div className="h-8/10 bg-gray-100 rounded-sm flex ">
           <SocialKeyWords data={analysisData.cloud} viewSize={viewSize}/>
