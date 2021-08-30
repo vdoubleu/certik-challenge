@@ -24,7 +24,7 @@ export function twitterDataAggregator(texts) {
   for (let textInd = 0; textInd < texts.length; textInd++) {
     const text = texts[textInd].text;
     allText += text + " ";
-    const words = text.split(/\s+/);
+    const words = text.split(/(\.|,|\s)+/).filter(w => !["'", '"', " ", ".", ","].includes(w));
     for (let wordInd = 0; wordInd < words.length; wordInd++) {
       const word = words[wordInd].toLowerCase();
 
