@@ -40,5 +40,7 @@ Without this token, the app will not properly run.
 The server will cache the requested data to display every 10 seconds. Tweets (and hence the data) do not update that frequently and so you don't need to always store the newest version. It also means the calculations required to aggregate the twitter data are performed less often.
 
 ## Running Tests
-You can run tests by going to the root directory of the project and running `npm run test`.
+You can run server tests by going to the root directory of the project and running `npm run test`.
+
+You can also run client tests by going into the client directory `cd client` and running `npm run test`.
 
