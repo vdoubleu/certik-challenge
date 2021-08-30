@@ -5,7 +5,7 @@ const SocialKeyWords = (props) => {
   const viewSize = props.viewSize;
   return (
     <TagCloud 
-      minSize={12}
+      minSize={40}
       maxSize={viewSize > 1280 ? 80 : 60}
       shuffle={true}
       tags={props.data}
