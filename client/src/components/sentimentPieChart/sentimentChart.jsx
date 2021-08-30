@@ -12,6 +12,12 @@ const SentimentChart = (props) => {
 
   const responsiveAspect = props.viewSize > 1025 ? 1 : 3;
 
+  const renderColorfulLegendText = (value: string, entry: any) => {
+    const { color } = entry;
+
+    return <span style={{ color }}>{value} - {Math.round(entry.payload.percent * 100)}%</span>;
+  };
+
   return (
     <ResponsiveContainer width={"100%"} aspect={responsiveAspect} >
       <PieChart width='300' height='500'>
@@ -27,7 +33,7 @@ const SentimentChart = (props) => {
           ))}
         </Pie>
         <Tooltip />
-        <Legend />
+        <Legend formatter={renderColorfulLegendText} />
       </PieChart>
     </ResponsiveContainer>
   );
