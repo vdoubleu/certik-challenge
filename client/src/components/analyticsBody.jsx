@@ -39,7 +39,7 @@ const AnalyticsBody = () => {
           Certik Sentiment Analysis
         </div>
         <div className="w-full bg-gray-100 flex items-center flex-col h-9/10">
-          <div className="mb-10 ml-5 w-full font-sans text-gray-600 font-medium"> From {new Date().toDateString()} to {getEndDate(activityDisplayDuration).toDateString()} </div>
+          <div className="mb-10 ml-5 w-full font-sans text-gray-600 font-medium"> From {new Date().toDateString()} - {getEndDate(activityDisplayDuration).toDateString()} </div>
           <SentimentChart data={analysisData.sentiment} viewSize={viewSize} />
         </div>
       </div>
